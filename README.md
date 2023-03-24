@@ -2,6 +2,30 @@
 
 This repository houses some useful scripts for dealing with Kew's herbarium specimen images.
 
+## Using this code
+
+To use this code, you need to download or clone this repository. 
+
+To clone this repository from the command line, run:
+```
+git clone https://github.com/barnabywalker/kew-image-dataset.git
+```
+
+You should then be able to run scripts from inside the repository directory.
+
+Some packages you might need to install are:
+- `requests`
+- `pillow`
+- `tqdm`
+- `numpy`
+- `pandas`
+- `pytorch`
+
+Alternatively, you can use the `environment.yml` file to create a conda environment with these packages installed:
+```
+conda env create -f environment.yml
+```
+
 ## Downloading images
 
 To download the images, you'll need a CSV file with the taxonomic information and download URL for all imaged Kew specimens, as well as the associated image URL.
@@ -139,3 +163,7 @@ ds.index
     ...
 ]
 ```
+
+## Issues/improvements
+
+Please [submit an issue](https://github.com/barnabywalker/kew-image-dataset/issues/new) if you have an difficulties using the code in this repository, or you have any suggestions for improvement.

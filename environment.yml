@@ -1,0 +1,16 @@
+name: kew-images
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - requests
+  - pandas
+  - numpy
+  - tqdm
+  - pillow
+  - pytorch
+  - torchvision
+  - torchaudio
+  - pytorch-cuda=11.7
